@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Donate - Galaxy Space</title>
+
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/donate.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne" />
+  </head>
+
+  <body class="w3-white">
+<body class="w3-white">
+  <header class="top-nav">
+    <div class="top-nav-inner">
+      <a href="/" class="nav-logo">Galaxy Space</a>
+      <nav class="nav-links">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/blog.html" class="nav-link">Blog</a>
+        <a href="/donate.html" class="nav-link">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Donate içerik -->
+    <div class="donate-container">
+    <section class="donate-card">
+        <h2 class="donate-title">My Patreon (Donation)</h2>
+        <p class="donate-meta">Sub. for 1 dolar. Any Donation will be praised</p>
+        <p class="donate-text">
+          Go To:
+          <a href="https://patreon.com/Novhex?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink">My Patreon Page</a>.
+        </p>
+      </section>
+
+    <div class="donate-container">
+      <section class="donate-card">
+        <h2 class="donate-title">My Boosty (Donation)</h2>
+        <p class="donate-meta">My Boosty Page</p>
+        <p class="donate-text">
+          Go To:
+          <a href="https://boosty.to/novhex/donate">My Boosty Page</a>.
+        </p>
+      </section>
+    
+    
+      <!-- Cüzdan 1 -->
+      <section class="donate-card">
+        <h2 class="donate-title">Solana (SOL)</h2>
+        <p class="donate-meta">Network: Solana Mainnet in Beta</p>
+        <p class="donate-text">
+          Address:
+          <span class="wallet-address">CmzsSj2ncU2LHUXChUBUwz1nDBeUrs8qAhD879o7wQop</span>
+        </p>
+      </section>
+
+      <!-- Cüzdan 2 -->
+      <section class="donate-card">
+        <h2 class="donate-title">Tether (USDT)</h2>
+        <p class="donate-meta">Network: Solana Mainnet in Beta</p>
+        <p class="donate-text">
+          Address:
+          <span class="wallet-address">CmzsSj2ncU2LHUXChUBUwz1nDBeUrs8qAhD879o7wQop</span>
+        </p>
+      </section>
+
+      <!-- Cüzdan 3 -->
+      <section class="donate-card">
+        <h2 class="donate-title">Binance Coin (BNB) </h2>
+        <p class="donate-meta">Network: BNB Smart Chain </p>
+        <p class="donate-text">
+          Address:
+          <span class="wallet-address">0x3f6380ED44d9077bE0db92dc6bfCA7b90dC3D49b</span>
+        </p>
+      </section>
+
+        <section class="donate-card">
+        <h2 class="donate-title">Avalanche (AVAX)</h2>
+        <p class="donate-meta">Network: Avalanche C-Chain</p>
+        <p class="donate-text">
+          Address:
+          <span class="wallet-address">0x3f6380ED44d9077bE0db92dc6bfCA7b90dC3D49b</span>
+        </p>
+      </section>
+
+      <div class="donate-back">
+        <a href="/" class="w3-button w3-yellow w3-round-xlarge">
+          ← Back to links
+        </a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        // Kartlar sırayla alttan yukarı fade-in
+        anime({
+          targets: '.donate-card',
+          opacity: [0, 1],
+          translateY: [30, 0],
+          easing: 'easeOutExpo',
+          delay: anime.stagger(180, { start: 200 }),
+          duration: 900
+        });
+
+        // Geri butonu
+        anime({
+          targets: '.donate-back a',
+          opacity: [0, 1],
+          translateY: [15, 0],
+          easing: 'easeOutExpo',
+          delay: 500,
+          duration: 600
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+/* ARKA PLAN VE GENEL YAPI */
+body {
+  background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?auto=format&fit=crop&w=1742&q=80);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-family: "Syne", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* MERKEZ KONTEYNER */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image-container {
+  text-align: center;
+  width: 100%;
+}
+
+/* LİNKLER */
+.links-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  min-width: 50% !important;
+}
+
+/* RESPONSIVE GENİŞLİKLER */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .link {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+/* BUTON VE BADGE RENKLERİ (SARIYI ÖLDÜR) */
+.w3-button.w3-yellow,
+.w3-button.w3-yellow:visited,
+.w3-button.w3-yellow:active {
+  background-color: rgba(50, 40, 10, 0.65) !important;
+  color: #ffffff !important;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.w3-button.w3-yellow:hover {
+  background-color: rgba(120, 90, 180, 0.9) !important;
+  color: #ffffff !important;
+}
+
+/* Comments 69 rozeti */
+.w3-badge.w3-yellow {
+  background-color: rgba(50, 40, 10, 0.65) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* BLOG ÖZETİ BLOĞUNU ORTALA */
+.blog-section {
+  margin-top: 40px;
+}
+/* ÜST MENÜ (NAVBAR) */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 56px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+.top-nav-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.nav-logo {
+  color: #ffccff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(120, 90, 180, 0.9);
+}
+
+/* Navbar yüksekliği kadar aşağı boşluk bırak */
+.container,
+.blog-section {
+  margin-top: 72px;
+}
